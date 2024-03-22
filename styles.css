@@ -1,6 +1,5 @@
-
 	body {
-		background-color: #000000; <!--#00777B-->
+		background-color: #00777B;
 	}
 	h1 {
 		color: #F3F8F6;
@@ -15,24 +14,23 @@
 		color: #F3F8F6;
 	}
     
-    
- li {
-  float: left;
-  background-color: #333333;
-}
+	li {
+	float: left;
+  	background-color: #333333;
+	}
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
+	li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 16px;
+	  text-decoration: none;
+	}
+	
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333333;
+	}
