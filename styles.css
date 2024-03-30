@@ -1,3 +1,8 @@
+	* {
+	margin: 0;
+	padding: 0;
+	}
+
 	body {
 		background-color: #00777B;
 	}
@@ -33,4 +38,63 @@
 	  padding: 0;
 	  overflow: hidden;
 	  background-color: #333333;
+	}
+
+
+
+
+	.ttt_text{
+		color: black;
+	}
+
+	.ttt_body {
+		background-color: darkcyan;
+		height: 100vh;
+		font-family: 'Times New Roman', sans-serif;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.board {
+		width: 320px;
+		height: 320px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		gap: 2px;
+		background-image: url(images/tic_tac_toe/grid.png);
+		background-size: cover;
+		border-radius: 3rem;
+		box-shadow: 0 0 15px 5px rgba(50, 50, 50, 0.5);
+		align-self: center;
+	}
+
+	.board:hover{
+		cursor: pointer;
+	}
+	
+	.ttt_button{
+		align-self: baseline;
+		width: 200px;
+		height: 50px;
+	}
+
+	.circle {
+		background-image: url(images/tic_tac_toe/o.png);
+		background-size: 80%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.cross {
+		background-image: url(images/tic_tac_toe/x.png);
+		
+	}
+
+	.circle,
+	.cross {
+		background-size: 80%;
+		background-position: center;
+		background-repeat: no-repeat;
 	}
