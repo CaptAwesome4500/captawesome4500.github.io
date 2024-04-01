@@ -19,12 +19,12 @@
 		color: #F3F8F6;
 	}
     
-	li {
+	.nav_bar {
 	float: left;
   	background-color: #333333;
 	}
 
-	li a {
+	.nav_bar a {
 	  display: block;
 	  color: white;
 	  text-align: center;
@@ -32,7 +32,7 @@
 	  text-decoration: none;
 	}
 	
-	ul {
+	.nav_ul {
 	  list-style-type: none;
 	  margin: 0;
 	  padding: 0;
