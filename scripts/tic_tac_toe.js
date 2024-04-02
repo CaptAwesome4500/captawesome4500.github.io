@@ -31,6 +31,12 @@ cell_elements.forEach((cell, index) => {
     });
 });
 
+while (game_over == false){
+    if (player == 69){
+        tic_tac_rizz();
+    }
+}
+
 function place_marker(index)
 {
     //determine position
@@ -143,4 +149,18 @@ function no_one_wins()
     game_over = true;
     document.getElementById("winner").textContent="It's a Draw!";
     tie.play();
+}
+
+function tic_tac_rizz()
+{
+    board_data = [
+    [1, -1, 1],
+    [-1, -1, 1],
+    [-1, 0, 1],
+];
+    draw_marker();
+    
+    game_over = true;
+    document.getElementById("winner").textContent="W Rizz";
+    yay.play();
 }
