@@ -6,5 +6,9 @@
   "fr": {
     "greeting": "Bonjour",
     "farewell": "Au revoir"
+  },
+  "es": {
+    "greeting": "Hola",
+    "farewell": "Adiós"
   }
 }
