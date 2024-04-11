@@ -18,3 +18,6 @@ function next()
 		document.getElementById("text_go_here").innerHTML = translationsData.farewell;
 	}
 }
+
+
+export { next };
