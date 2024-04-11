@@ -16,10 +16,10 @@ function updateOutput(language, translations) {
     var outputDiv = document.getElementById('output');
     var translation = translations[language];
     if (translation) {
-        //outputDiv.innerHTML = `
-            //<p>${translation.greeting}</p>
-            //<p>${translation.farewell}</p>
-       //`;
+        outputDiv.innerHTML = `
+            <p>${translation.greeting}</p>
+            <p>${translation.farewell}</p>
+       `;
     } else {
         outputDiv.textContent = 'Language not found';
     }
