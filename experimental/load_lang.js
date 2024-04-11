@@ -1,5 +1,15 @@
 let translationsData;
 
+
+import { next } from './game.js';
+
+// Add event listener to the button
+document.getElementById('nextButton').addEventListener('click', function() {
+    // Call the next function when the button is clicked
+    next();
+});
+
+
 // Function to update output based on language
 function updateOutput(language, translations) {
     translationsData = translations; // Store translations globally
