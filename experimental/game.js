@@ -5,7 +5,7 @@ var text = 0;
 
 function next()
 {
-	console.log(text)
+	//console.log(text)
 	text++;
 	if (text == 2){
 		text = 0
@@ -18,6 +18,7 @@ function next()
 	else if (text == 1){
 		document.getElementById("text_go_here").innerHTML = translationsData.farewell;
 	}
+	console.log(text)
 }
 
 // Add event listener to the button
