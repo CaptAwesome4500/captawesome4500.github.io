@@ -5,7 +5,7 @@ var text = 0;
 
 function next()
 {
-	Console.Log(text)
+	console.log(text)
 	text++;
 	if (text == 2){
 		text = 0
