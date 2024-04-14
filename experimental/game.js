@@ -1,4 +1,4 @@
-import { translationsData } from './load_lang.js';
+import { translationsData } from 'load_lang.js';
 
 // Now you can use translationsData.greeting in this file
 var text = 0;
