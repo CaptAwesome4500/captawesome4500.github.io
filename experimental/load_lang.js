@@ -1,5 +1,7 @@
 let translationsData;
 
+level = [null][null][null];
+	//level array breakdown [act][level][text]
 
 // Function to update output based on language
 function updateOutput(language, translations) {
@@ -66,8 +68,82 @@ function next()
 	console.log(text)
 }
 
+function next_text()
+{
+	if (level[0] == null){
+		
+		//set the act to 0 (Prolouge)
+		level = [0][null][0]
+	}
+
+	else if(level[0] == 0){ //if its the prolouge
+
+		if(level[2] == 0){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_one;
+			level[2] = level[2]++;
+		
+		}
+
+		else if(level[2] == 1){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_two;
+			level[2] = level[2]++;
+		
+		}
+		
+		else if(level[2] == 2){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_three;
+			level[2] = level[2]++;
+		
+		}
+		
+		else if(level[2] == 3){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_four;
+			level[2] = level[2]++;
+		
+		}
+		
+		else if(level[2] == 4){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_five;
+			level[2] = level[2]++;
+		
+		}
+		
+		else if(level[2] == 5){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_six;
+			level[2] = level[2]++;
+		
+		}
+		
+		else if(level[2] == 6){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_seven;
+			level[2] = level[2]++;
+		
+		}
+		
+		else if(level[2] == 7){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_eight;
+			level[2] = level[2]++;
+		
+		}
+		
+		else if(level[2] == 8){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_nine;
+		
+		}
+	}
+}
+
 // Add event listener to the button
 document.getElementById('nextButton').addEventListener('click', function() {
     // Call the next function when the button is clicked
-    next();
+    next_text();
 });
