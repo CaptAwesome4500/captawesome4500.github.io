@@ -47,6 +47,8 @@ var text = 0;
 
 function next()
 {
+	console.log(translationsData.farewell)
+	console.log(translationsData.greeting)
 	console.log(translationsData)
 	//console.log(text)
 	text++;
