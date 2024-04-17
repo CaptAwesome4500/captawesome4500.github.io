@@ -73,7 +73,7 @@ function next_text()
 	if (level[0] == null){
 		
 		//set the act to 0 (Prolouge)
-		level = [0][null][0]
+		level = [0, null, 0]
 	}
 
 	else if(level[0] == 0){ //if its the prolouge
