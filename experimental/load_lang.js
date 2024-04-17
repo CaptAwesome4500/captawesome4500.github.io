@@ -3,7 +3,7 @@ let translationsData;
 
 // Function to update output based on language
 function updateOutput(language, translations) {
-    translationsData = translations; // Store translations globally
+    translationsData = translations[language]; // Store translations globally
     var outputDiv = document.getElementById('output');
     var translation = translations[language];
     if (translation) {
