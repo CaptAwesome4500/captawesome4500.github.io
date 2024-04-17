@@ -54,11 +54,11 @@ function next()
 	}
 
 	if (text == 0){
-		document.getElementById("text_go_here").innerHTML = translationsData.greeting;
+		document.getElementById("text_go_here").innerHTML = ${translation.greeting};
 	}
 
 	else if (text == 1){
-		document.getElementById("text_go_here").innerHTML = translationsData.farewell;
+		document.getElementById("text_go_here").innerHTML = ${translation.farewell};
 	}
 	console.log(text)
 }
