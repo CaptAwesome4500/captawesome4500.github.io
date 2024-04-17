@@ -39,4 +39,20 @@
         // Append the script element to the <head> element of the document
         document.head.appendChild(jsScript);
     });
+
+    // Define the URL of the JSON file
+    const jsonUrl = 'https://captawesome4500.github.io/experimental/translations.json';
+
+    // Generate a cache-busting parameter for JSON using the current timestamp (in seconds)
+    const jsonCacheBuster = Math.round(new Date().getTime() / 1000);
+
+    // Create a new script element for JSON
+    const jsonScript = document.createElement('script');
+
+    // Set the src attribute of the JSON script element with the cache-busting parameter
+    jsonScript.setAttribute('src', `${jsonUrl}?cb=${jsonCacheBuster}`);
+
+    // Append the JSON script element to the <head> element of the document
+    document.head.appendChild(jsonScript);
+
 })();
