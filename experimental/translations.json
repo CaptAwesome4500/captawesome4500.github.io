@@ -1,7 +1,14 @@
 {
   "en": {
-    "greeting": "Hello",
-    "farewell": "Goodbye"
+    "proOne": "[Prolouge] When the was founded; there existed four elements -Fire, Earth, Water, and Air.",
+    "proTwo": "    These elements formed each their own kingdoms.",
+    "proThree": "    In Happiness they formed Life, and in war, Death.",
+    "proFour": "    Whilst the Kingdom of Death is active, the kings will slowly loose their power, until death.",
+    "proFive": "    As a result, the King of Life felt powerful, so much power he became corrupt with it.",
+    "proSix": "    The corruption spread like a disease, infecting the citizens, and the land.",
+    "proSeven": "    The kings of Fire, Earth, Water, and Air faced the corrupt king,",
+    "proEight": "    They fought valiantly, but succumbed to the corruption.",
+    "proNine": "    That leads us to now..."
   },
   "fr": {
     "greeting": "Bonjour",
