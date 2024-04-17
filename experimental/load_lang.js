@@ -1,6 +1,6 @@
 let translationsData;
 
-let level = [null][null][null];
+let level = [null, null, null];
 	//level array breakdown [act][level][text]
 
 // Function to update output based on language
