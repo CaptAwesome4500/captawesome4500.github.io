@@ -70,6 +70,7 @@ function next()
 
 function next_text()
 {
+	console.log(level)
 	if (level[0] == null){
 		
 		//set the act to 0 (Prolouge)
@@ -140,6 +141,7 @@ function next_text()
 		
 		}
 	}
+	console.log(level)
 }
 
 // Add event listener to the button
