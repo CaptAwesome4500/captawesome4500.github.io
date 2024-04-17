@@ -71,71 +71,71 @@ function next()
 function next_text()
 {
 	console.log(level)
-	if (level[0] == null){
+	if (level[0][0] == null){
 		
 		//set the act to 0 (Prolouge)
 		level = [0, null, 0]
 	}
 
-	else if(level[0] == 0){ //if its the prolouge
+	else if(level[0][0] == 0){ //if its the prolouge
 
-		if(level[2] == 0){
+		if(level[0][2] == 0){
 		
 			document.getElementById("text_go_here").innerHTML = translationsData.proOne;
-			level[2] = level[2]++;
+			level[0][2] = level[0][2]++;
 		
 		}
 
-		else if(level[2] == 1){
+		else if(level[0][2] == 1){
 		
 			document.getElementById("text_go_here").innerHTML = translationsData.proTwo;
-			level[2] = level[2]++;
+			level[0][2] = level[0][2]++;
 		
 		}
 		
-		else if(level[2] == 2){
+		else if(level[0][2] == 2){
 		
 			document.getElementById("text_go_here").innerHTML = translationsData.proThree;
-			level[2] = level[2]++;
+			level[0][2] = level[0][2]++;
 		
 		}
 		
-		else if(level[2] == 3){
+		else if(level[0][2] == 3){
 		
 			document.getElementById("text_go_here").innerHTML = translationsData.proFour;
-			level[2] = level[2]++;
+			level[0][2] = level[0][2]++;
 		
 		}
 		
-		else if(level[2] == 4){
+		else if(level[0][2] == 4){
 		
 			document.getElementById("text_go_here").innerHTML = translationsData.proFive;
-			level[2] = level[2]++;
+			level[0][2] = level[0][2]++;
 		
 		}
 		
-		else if(level[2] == 5){
+		else if(level[0][2] == 5){
 		
 			document.getElementById("text_go_here").innerHTML = translationsData.proSix;
-			level[2] = level[2]++;
+			level[0][2] = level[0][2]++;
 		
 		}
 		
-		else if(level[2] == 6){
+		else if(level[0][2] == 6){
 		
 			document.getElementById("text_go_here").innerHTML = translationsData.proSeven;
-			level[2] = level[2]++;
+			level[0][2] = level[0][2]++;
 		
 		}
 		
-		else if(level[2] == 7){
+		else if(level[0][2] == 7){
 		
 			document.getElementById("text_go_here").innerHTML = translationsData.proEight;
-			level[2] = level[2]++;
+			level[0][2] = level[0][2]++;
 		
 		}
 		
-		else if(level[2] == 8){
+		else if(level[0][2] == 8){
 		
 			document.getElementById("text_go_here").innerHTML = translationsData.proNine;
 		
