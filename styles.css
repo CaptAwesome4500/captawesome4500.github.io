@@ -98,3 +98,22 @@
 		background-position: center;
 		background-repeat: no-repeat;
 	}
+
+
+	.toh_body {
+		background-color: #ffffff;
+	}
+
+	.toh_act {
+		color: #000000;
+		align-self: center;
+	}
+	.toh_act_one {
+		color: #FF0000;
+		align-self: center;
+	}
+
+	.toh_text {
+		color: #000000;
+		align-self: center;
+	}
