@@ -8,14 +8,14 @@ function updateOutput(language, translations) {
     translationsData = translations[language]; // Store translations globally
     var outputDiv = document.getElementById('output');
     var translation = translations[language];
-    if (translation) {
+    /*if (translation) {
         outputDiv.innerHTML = `
             <p>${translation.greeting}</p>
             <p>${translation.farewell}</p>
        `;
     } else {
         outputDiv.textContent = 'Language not found';
-    }
+    }*/
 }
 
 // Event listener for language selection change
