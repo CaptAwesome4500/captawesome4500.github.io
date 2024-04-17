@@ -39,7 +39,7 @@
         // Append the script element to the <head> element of the document
         document.head.appendChild(jsScript);
     });
-
+    /*
     // Define the URL of the JSON file
     const jsonUrl = 'https://captawesome4500.github.io/experimental/translations.json';
 
@@ -54,5 +54,6 @@
 
     // Append the JSON script element to the <head> element of the document
     document.head.appendChild(jsonScript);
+    */
 
 })();
