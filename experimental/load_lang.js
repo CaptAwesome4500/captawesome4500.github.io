@@ -41,7 +41,7 @@ document.getElementById('languageSelect').addEventListener('change', function ()
 // Initialize output with default language (English)
 updateOutput('en', {});
 
-export { translationsData }; // Export translations object
+//export { translationsData }; // Export translations object
 
 
 // Now you can use translationsData.greeting in this file
