@@ -79,8 +79,8 @@ function next_text()
 
 	else if(level[0] == 0){ //if its the prolouge
 
-		document.getElementById("toh_act").innerHTML = translationsData.actPro; //Change act title
-		document.getElementById("toh_level").innerHTML = translationsData.actLevel; //Change level title
+		//document.getElementById("toh_act").innerHTML = translationsData.actPro; //Change act title
+		//document.getElementById("toh_level").innerHTML = translationsData.actLevel; //Change level title
 
 		if(level[2] == 0){
 		
