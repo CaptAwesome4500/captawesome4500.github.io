@@ -80,63 +80,63 @@ function next_text()
 
 		if(level[2] == 0){
 		
-			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_one;
+			document.getElementById("text_go_here").innerHTML = translationsData.proOne;
 			level[2] = level[2]++;
 		
 		}
 
 		else if(level[2] == 1){
 		
-			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_two;
+			document.getElementById("text_go_here").innerHTML = translationsData.proTwo;
 			level[2] = level[2]++;
 		
 		}
 		
 		else if(level[2] == 2){
 		
-			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_three;
+			document.getElementById("text_go_here").innerHTML = translationsData.proThree;
 			level[2] = level[2]++;
 		
 		}
 		
 		else if(level[2] == 3){
 		
-			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_four;
+			document.getElementById("text_go_here").innerHTML = translationsData.proFour;
 			level[2] = level[2]++;
 		
 		}
 		
 		else if(level[2] == 4){
 		
-			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_five;
+			document.getElementById("text_go_here").innerHTML = translationsData.proFive;
 			level[2] = level[2]++;
 		
 		}
 		
 		else if(level[2] == 5){
 		
-			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_six;
+			document.getElementById("text_go_here").innerHTML = translationsData.proSix;
 			level[2] = level[2]++;
 		
 		}
 		
 		else if(level[2] == 6){
 		
-			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_seven;
+			document.getElementById("text_go_here").innerHTML = translationsData.proSeven;
 			level[2] = level[2]++;
 		
 		}
 		
 		else if(level[2] == 7){
 		
-			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_eight;
+			document.getElementById("text_go_here").innerHTML = translationsData.proEight;
 			level[2] = level[2]++;
 		
 		}
 		
 		else if(level[2] == 8){
 		
-			document.getElementById("text_go_here").innerHTML = translationsData.prolouge_nine;
+			document.getElementById("text_go_here").innerHTML = translationsData.proNine;
 		
 		}
 	}
