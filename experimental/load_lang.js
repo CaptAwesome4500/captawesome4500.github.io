@@ -47,6 +47,7 @@ var text = 0;
 
 function next()
 {
+	console.log(translationsData)
 	//console.log(text)
 	text++;
 	if (text == 2){
