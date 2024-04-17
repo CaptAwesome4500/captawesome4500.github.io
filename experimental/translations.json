@@ -184,8 +184,9 @@
     "fiveThree": "[Fire King] I say the same to you.",
     "fiveFour": "(FIGHTING: YOU WILL ANWSER A RIDDLE. CORRECT ANWSER WILL DEAL DAMAGE.",
     "fiveFive": "(THE KING WILL DO LIKEWISE UNTIL SOMEONE DIES)",
-    "fiveRiddleOne": "[Riddle] What can you hold in your right hand, but not in your left?", //anwser your left hand
-    "fiveRiddleTwo": "[Riddle] David's father has three sons: Snap, Crackle, and...", //David
+    "fiveRiddleOne": "[Riddle] What can you hold in your right hand, but not in your left?",
+    "fiveRiddleOneAnwser":  "Left Hand",
+    "fiveRiddleTwo": "[Riddle] David's father has three sons: Snap, Crackle, and...",
     "fiveSix": "[Fire King] You... Win...",
     "fiveSeven": "[You] He has perished.",
     "fiveEight": "[Fire King] What..? Where am I?",
