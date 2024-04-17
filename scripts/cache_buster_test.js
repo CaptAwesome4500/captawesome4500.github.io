@@ -1,59 +1,33 @@
 (function() {
-    // Define the URL of the CSS file
-    const cssHref = 'https://captawesome4500.github.io/styles.css';
-    
-    // Generate a cache-busting parameter for CSS using the current timestamp (in seconds)
-    const cssCacheBuster = Math.round(new Date().getTime() / 1000);
-    
-    // Create a new link element for CSS
-    const cssLink = document.createElement('link');
-    
-    // Set the href attribute of the CSS link element with the cache-busting parameter
-    cssLink.setAttribute('href', `${cssHref}?cb=${cssCacheBuster}`);
-    
-    // Set the rel attribute of the CSS link element to 'stylesheet'
-    cssLink.setAttribute('rel', 'stylesheet');
-    
-    // Append the CSS link element to the <head> element of the document
-    document.head.appendChild(cssLink);
-    
-    // Define the URLs of the JavaScript files
+    // Set cache-busting parameter for CSS and JavaScript
+    const cacheBuster = Math.round(new Date().getTime() / 1000);
+
+    // Set cache-control headers to prevent caching for all resources
+    const setCacheControl = function(url) {
+        fetch(url, { cache: 'no-store' });
+    };
+
+    // Define the URLs of the CSS, JavaScript, and JSON files
+    const cssUrl = 'https://captawesome4500.github.io/styles.css';
     const jsFiles = [
         'https://captawesome4500.github.io/scripts/cache_buster.js',
         'https://captawesome4500.github.io/scripts/tic_tac_toe.js',
         'https://captawesome4500.github.io/experimental/load_lang.js',
         // Add more URLs as needed
     ];
-    
-    // Generate a cache-busting parameter for JavaScript using the current timestamp (in seconds)
-    const jsCacheBuster = Math.round(new Date().getTime() / 1000);
-    
-    // Loop through the array of JavaScript file URLs
+    const jsonFiles = [
+        'https://captawesome4500.github.io/experimental/translations.json',
+        // Add more URLs as needed
+    ];
+
+    // Fetch CSS and JavaScript files with cache-control headers
+    setCacheControl(`${cssUrl}?cb=${cacheBuster}`);
     jsFiles.forEach(function(jsSrc) {
-        // Create a new script element for each JavaScript file
-        const jsScript = document.createElement('script');
-        
-        // Set the src attribute of the script element with the cache-busting parameter
-        jsScript.setAttribute('src', `${jsSrc}?cb=${jsCacheBuster}`);
-        
-        // Append the script element to the <head> element of the document
-        document.head.appendChild(jsScript);
+        setCacheControl(`${jsSrc}?cb=${cacheBuster}`);
     });
-    /*
-    // Define the URL of the JSON file
-    const jsonUrl = 'https://captawesome4500.github.io/experimental/translations.json';
 
-    // Generate a cache-busting parameter for JSON using the current timestamp (in seconds)
-    const jsonCacheBuster = Math.round(new Date().getTime() / 1000);
-
-    // Create a new script element for JSON
-    const jsonScript = document.createElement('script');
-
-    // Set the src attribute of the JSON script element with the cache-busting parameter
-    jsonScript.setAttribute('src', `${jsonUrl}?cb=${jsonCacheBuster}`);
-
-    // Append the JSON script element to the <head> element of the document
-    document.head.appendChild(jsonScript);
-    */
-
+    // Fetch JSON files with cache-control headers
+    jsonFiles.forEach(function(jsonSrc) {
+        setCacheControl(`${jsonSrc}?cb=${cacheBuster}`);
+    });
 })();
