@@ -101,11 +101,11 @@
 
 
 	.toh_body {
-		background-color: #ffffff;
+		background-color: #000000;
 	}
 
 	.toh_act {
-		color: #000000;
+		color: #FFFFFF;
 		align-self: center;
 	}
 	.toh_act_one {
@@ -114,6 +114,6 @@
 	}
 
 	.toh_text {
-		color: #000000;
+		color: #FFFFFF;
 		align-self: center;
 	}
