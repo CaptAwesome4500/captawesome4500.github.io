@@ -241,7 +241,9 @@ function next_text()
 		else if(level[2] == 15){
 		
 			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.riddle;
-			level[2]++;
+			
+			document.getElementById("text_input").style.visibility = "visible";
+
 		
 		}
 		/*else if(level[2] == 16){
