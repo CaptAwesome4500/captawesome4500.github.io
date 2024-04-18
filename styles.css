@@ -119,27 +119,27 @@
 
 	.toh_act {
 		color: #CCCCCC;
-		align-self: center;
+		text-align: center;
 		font-family: toh;
 		font-size: 40px;
 	}
 	.toh_act_one {
 		color: #FF0000;
-		align-self: center;
+		text-align: center;
 		font-family: toh;
 		font-size: 40px;
 	}
 
 	.toh_level {
 		color: #CCCCCC;
-		align-self: center;
+		text-align: center;
 		font-family: toh;
 		font-size: 40px;
 	}
 
 	.toh_text {
 		color: #CCCCCC;
-		align-self: center;
+		text-align: center;
 		font-family: toh;
 		font-size: 40px;
 	}
