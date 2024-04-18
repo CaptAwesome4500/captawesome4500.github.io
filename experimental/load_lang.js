@@ -64,6 +64,7 @@ function next()
 
 function next_text()
 {
+	console.log(selectedLanguage)
 	console.log(level)
 	if (level[0] == null){
 		
@@ -235,7 +236,7 @@ function next_text()
 		else if(level[2] == 15){
 		
 			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.riddle;
-
+			level[2]++;
 		
 		}
 		else if(level[2] == 16){
@@ -292,7 +293,7 @@ function next_text()
 function lexion_riddle()
 {
 	const anwser = prompt(translationsData.actI.levelI.lexion_anwser + ":");
-
+	
 	if (anwser.includes("seven") == true || anwser.includes("7") == true){
 		
 		level[2]++;
