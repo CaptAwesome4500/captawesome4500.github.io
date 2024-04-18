@@ -8,6 +8,7 @@ let anwser_correct = null;
 // Function to update output based on language
 function updateOutput(language, translations) {
 translationsData = translations[language]; // Store translations globally
+console.log(selectedLanguage)
 var outputDiv = document.getElementById('output');
 var translation = translations[language];
 }
@@ -64,7 +65,6 @@ function next()
 
 function next_text()
 {
-	console.log(selectedLanguage)
 	console.log(level)
 	if (level[0] == null){
 		
