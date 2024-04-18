@@ -145,7 +145,7 @@ function next_text()
 		}
 	}
 
-	else if(level[0] == 0){ //if its act I
+	else if(level[0] == 1){ //if its act I
 		
 		if(level[2] == 0){
 		
