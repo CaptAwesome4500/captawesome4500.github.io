@@ -5,37 +5,37 @@ let level = [null, null, null];
 
 // Function to update output based on language
 function updateOutput(language, translations) {
-    translationsData = translations[language]; // Store translations globally
-    var outputDiv = document.getElementById('output');
-    var translation = translations[language];
-    /*if (translation) {
-        outputDiv.innerHTML = `
-            <p>${translation.greeting}</p>
-            <p>${translation.farewell}</p>
-       `;
-    } else {
-        outputDiv.textContent = 'Language not found';
-    }*/
+translationsData = translations[language]; // Store translations globally
+var outputDiv = document.getElementById('output');
+var translation = translations[language];
+/*if (translation) {
+outputDiv.innerHTML = `
+<p>${translation.greeting}</p>
+<p>${translation.farewell}</p>
+   `;
+} else {
+outputDiv.textContent = 'Language not found';
+}*/
 }
 
 // Event listener for language selection change
 document.getElementById('languageSelect').addEventListener('change', function () {
-    var selectedLanguage = this.value;
+var selectedLanguage = this.value;
 
-    // Load JSON file using fetch
-    fetch('translations.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to fetch translations');
-            }
-            return response.json();
-        })
-        .then(translations => {
-            updateOutput(selectedLanguage, translations);
-        })
-        .catch(error => {
-            console.error('Error fetching translations:', error);
-        });
+// Load JSON file using fetch
+fetch('translations.json')
+.then(response => {
+if (!response.ok) {
+throw new Error('Failed to fetch translations');
+}
+return response.json();
+})
+.then(translations => {
+updateOutput(selectedLanguage, translations);
+})
+.catch(error => {
+console.error('Error fetching translations:', error);
+});
 });
 
 // Initialize output with default language (English)
@@ -141,14 +141,51 @@ function next_text()
 		else if(level[2] == 8){
 		
 			document.getElementById("text_go_here").innerHTML = translationsData.proNine;
-		
+			level = [1, 1, 0];
 		}
 	}
+
+	else if(level[0] == 0){ //if its act I
+		
+		if(level[2] == 0){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.three;
+			level[2]++;
+		
+		}
+
+		else if(level[2] == 1){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.four;
+			level[2]++;
+		
+		}
+		else if(level[2] == 2){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.five;
+			level[2]++;
+		
+		}
+		else if(level[2] == 3){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.six;
+			level[2]++;
+		
+		}
+		else if(level[2] == 4){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.seven;
+			level[2]++;
+		
+		}
+
+	}
+
 	console.log(level)
 }
 
 // Add event listener to the button
 document.getElementById('nextButton').addEventListener('click', function() {
-    // Call the next function when the button is clicked
-    next_text();
+// Call the next function when the button is clicked
+next_text();
 });
