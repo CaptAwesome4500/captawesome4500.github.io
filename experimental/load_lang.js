@@ -3,19 +3,13 @@ let translationsData;
 let level = [null, null, null];
 	//level array breakdown [act][level][text]
 
+let anwser_correct = null;
+
 // Function to update output based on language
 function updateOutput(language, translations) {
 translationsData = translations[language]; // Store translations globally
 var outputDiv = document.getElementById('output');
 var translation = translations[language];
-/*if (translation) {
-outputDiv.innerHTML = `
-<p>${translation.greeting}</p>
-<p>${translation.farewell}</p>
-   `;
-} else {
-outputDiv.textContent = 'Language not found';
-}*/
 }
 
 // Event listener for language selection change
@@ -241,27 +235,76 @@ function next_text()
 		else if(level[2] == 15){
 		
 			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.riddle;
-			
-			document.getElementById("text_input").style.visibility = "visible";
 
 		
 		}
-		/*else if(level[2] == 16){
+		else if(level[2] == 16){
 		
-			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.seven;
+			lexion_riddle();
+			
+
+		}
+		//correct
+		else if(level[2] == 17 && anwser_correct == true){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.lexionCorrectOne;
 			level[2]++;
 		
 		}
-		else if(level[2] == 17){
+		else if(level[2] == 18 && anwser_correct == true){
 		
-			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.seven;
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.lexionCorrectTwo;
 			level[2]++;
 		
-		}*/
+		}
+		else if(level[2] == 19 && anwser_correct == true){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.lexionCorrectThree;
+			level[2]++;
+		
+		}
+		//incorrect
+		else if(level[2] == 17 && anwser_correct == false){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.lexionIncorrectOne;
+			level[2]++;
+		
+		}
+		else if(level[2] == 18 && anwser_correct == false){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.lexionIncorrectTwo;
+			level[2]++;
+		
+		}
+		else if(level[2] == 19 && anwser_correct == false){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.lexionIncorrectThree;
+			level[2]++;
+		
+		}
+
 
 	}
 
 	console.log(level)
+}
+
+function lexion_riddle()
+{
+	const anwser = prompt(translationsData.actI.levelI.lexion_anwser + ":");
+
+	if (anwser.includes("seven") == true || anwser.includes("7") == true){
+		
+		level[2]++;
+		anwser_correct = true;
+		next_text();
+		
+	}
+	else{
+		level[2]++;
+		anwser_correct = false;
+		next_text();
+	}
 }
 
 // Add event listener to the button
