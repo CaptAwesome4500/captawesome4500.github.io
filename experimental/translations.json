@@ -49,7 +49,8 @@
         "lexionCorrectThree": "Brains always win. You may enter.",
         "lexionIncorrectOne": "[Lexion] Wrong!",
         "lexionIncorrectTwo": "If I were wise, I'd kill you now,",
-        "lexionIncorrectThree": "but I'll let you live, because I belive in what you are trying to do."
+        "lexionIncorrectThree": "but I'll let you live, because I belive in what you are trying to do.",
+		"riddle": "I am an odd number,\nbut take away a letter, and I'm even,\nWhat am I?"
       },
 
       "levelII": {

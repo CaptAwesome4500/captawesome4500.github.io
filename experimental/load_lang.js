@@ -178,6 +178,84 @@ function next_text()
 			level[2]++;
 		
 		}
+		else if(level[2] == 5){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.eight;
+			level[2]++;
+		
+		}
+		else if(level[2] == 6){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.nine;
+			level[2]++;
+		
+		}
+		else if(level[2] == 7){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.ten;
+			level[2]++;
+		
+		}
+		else if(level[2] == 8){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.eleven;
+			level[2]++;
+		
+		}
+		else if(level[2] == 9){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.twelve;
+			level[2]++;
+		
+		}
+		else if(level[2] == 10){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.thirteen;
+			level[2]++;
+		
+		}
+		else if(level[2] == 11){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.fourteen;
+			level[2]++;
+		
+		}
+		else if(level[2] == 12){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.fifteen;
+			level[2]++;
+		
+		}
+		else if(level[2] == 13){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.sixteen;
+			level[2]++;
+		
+		}
+		else if(level[2] == 14){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.seventeen;
+			level[2]++;
+		
+		}
+		else if(level[2] == 15){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.riddle;
+			level[2]++;
+		
+		}
+		/*else if(level[2] == 16){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.seven;
+			level[2]++;
+		
+		}
+		else if(level[2] == 17){
+		
+			document.getElementById("text_go_here").innerHTML = translationsData.actI.levelI.seven;
+			level[2]++;
+		
+		}*/
 
 	}
 
