@@ -52,7 +52,9 @@
 	  background-color: #333333;
 	}
 
-
+	.avatar {
+		border-radius: 50%;
+	}
 
 
 	.ttt_text{
