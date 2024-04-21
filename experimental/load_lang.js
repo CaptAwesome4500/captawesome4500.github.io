@@ -291,11 +291,11 @@ function next_text()
 
 function lexion_riddle()
 {
-	const anwser = prompt(translationsData.actI.levelI.lexionAnwser + ":");
+	let anwser = prompt(translationsData.actI.levelI.lexionAnwser + ":");
 	
-	anwser = anwser.toUpperCase();
+	let caps_anwser = anwser.toUpperCase();
 
-	if (anwser == translationsData.actI.levelI.anwser ||  anwser == "7"){
+	if (caps_anwser == translationsData.actI.levelI.anwser ||  anwser == "7"){
 		
 		level[2]++;
 		anwser_correct = true;
