@@ -31,6 +31,10 @@
 		color: #F3F8F6;
 	}
 
+        li {
+		color: #F3F8F6;
+        }
+
 	.nav_bar {
 	float: left;
   	background-color: #333333;
