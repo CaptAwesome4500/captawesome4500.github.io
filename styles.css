@@ -31,9 +31,13 @@
 		color: #F3F8F6;
 	}
 
-        li {
+    li {
 		color: #F3F8F6;
-        }
+    }
+
+	.indent {
+		padding-left: 50px;
+	}
 
 	.nav_bar {
 	float: left;
