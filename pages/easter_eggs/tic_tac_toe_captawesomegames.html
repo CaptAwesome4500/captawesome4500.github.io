@@ -21,18 +21,5 @@
 
 		<p>The victory trill reads "Good Job" in Morse Code</p>
 
-		<script>
-			// Load the menu using AJAX
-			const menuPlaceholder = document.getElementById('menu-placeholder');
-			const xhr = new XMLHttpRequest();
-			xhr.open('GET', 'menu.html', true);
-			xhr.onreadystatechange = function () {
-			if (xhr.readyState === 4 && xhr.status === 200) {
-			menuPlaceholder.innerHTML = xhr.responseText;
-			}
-			};
-			xhr.send();
-		</script>
-
 	</body>
 </html>

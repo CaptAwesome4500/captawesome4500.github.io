@@ -5,17 +5,18 @@
 	<title>Development Team</title>
 	<link rel="icon" type="image/x-icon" href="">
 
-	<ul class="nav_ul">
-
-		<li class="nav_bar"><a href="https://captawesome4500.github.io">Home</a></li>
-		<li class="nav_bar"><a href="https://captawesome4500.github.io/pages/games.html">Game Libary</a></li>
-		<li class="nav_bar"><a href="https://captawesome4500.github.io/pages/upcoming_games.html">Upcoming Games</a></li>
-		<li class="nav_bar"><a href="https://captawesome4500.github.io/pages/easter_eggs.html">Easter Eggs</a></li>
-		<li class="nav_bar"><a href="https://captawesome4500.github.io/pages/team.html">Developmennt Team</a></li>
-
-	</ul>
-
-	<br><br>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+		document.getElementById("navigation").innerHTML = this.responseText;
+		}
+		};
+		xhttp.open("GET", "https://captawesome4500.github.io/menu.html", true);
+		xhttp.send();
+		});
+	</script>
 
 	<link rel="stylesheet" href="https://captawesome4500.github.io/styles.css">
 
@@ -27,6 +28,10 @@
 	
 	<body style="background-color:#00777B;">
 	
+		<div id="navigation"></div>
+
+		<br><br>
+
 	<h1>Team</h1>
 		<br><br>
 				<h4>CaptAwesome4500</h4>
