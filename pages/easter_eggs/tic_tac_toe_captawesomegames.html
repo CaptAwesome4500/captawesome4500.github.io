@@ -1,32 +1,38 @@
-<?php include('https://captawesome4500.github.io/scripts/cache_buster.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+	<head>
 
-    <title>Tic Tac Toe Easter Eggs Eggs</title>
+		<title>Tic Tac Toe Easter Eggs Eggs</title>
 
-	<link rel="icon" type="image/x-icon" href="../images/weppage_icon_32.ico">
-    
-        <ul class ="nav_ul">
-        
-		<li class ="nav_bar"><a href="https://captawesome4500.github.io">Home</a></li>
-		<li class ="nav_bar"><a href="https://captawesome4500.github.io/pages/games.html">Game Libary</a></li>
-		<li class ="nav_bar"><a href="https://captawesome4500.github.io/pages/upcoming_games.html">Upcoming Games</a></li>
-		<li class ="nav_bar"><a href="https://captawesome4500.github.io/pages/easter_eggs.html">Easter Eggs</a></li>
-			
-        </ul>
-	
-    <br><br>
+		<link rel="icon" type="image/x-icon" href="../images/weppage_icon_32.ico">
 
-	<link rel="stylesheet" href="https://captawesome4500.github.io/styles.css">
+		<div id="menu-placeholder"></div>
+
+		<br>
+		<br>
+
+		<link rel="stylesheet" href="https://captawesome4500.github.io/styles.css">
 
 
-</head>
+	</head>
 
-<body style="background-color:#00777B;">
+	<body style="background-color:#00777B;">
 
-	<p>The victory trill reads "Good Job" in Morse Code</p>
-	
-</body>
+		<p>The victory trill reads "Good Job" in Morse Code</p>
+
+		<script>
+			// Load the menu using AJAX
+			const menuPlaceholder = document.getElementById('menu-placeholder');
+			const xhr = new XMLHttpRequest();
+			xhr.open('GET', 'menu.html', true);
+			xhr.onreadystatechange = function () {
+			if (xhr.readyState === 4 && xhr.status === 200) {
+			menuPlaceholder.innerHTML = xhr.responseText;
+			}
+			};
+			xhr.send();
+		</script>
+
+	</body>
 </html>

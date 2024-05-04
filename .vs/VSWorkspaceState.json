@@ -3,8 +3,9 @@
     "",
     "\\experimental",
     "\\pages",
+    "\\pages\\easter_eggs",
     "\\scripts"
   ],
-  "SelectedNode": "\\experimental\\translations.json",
+  "SelectedNode": "\\pages\\easter_eggs\\tic_tac_toe_captawesomegames.html",
   "PreviewInSolutionExplorer": false
 }
