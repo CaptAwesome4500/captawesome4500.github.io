@@ -1,5 +1,7 @@
-const month = new getMonth();
-const day = new getDay();
+const date = new Date();
+
+const month = date.getMonth
+const day = date.getDay();
 
 console.log("Month:" month);
-console.log("Day:" Day);
+console.log("Day:" day);
