@@ -64,6 +64,11 @@
 		border-radius: 50%;
 	}
 
+	.blur {
+		font-size: 40px;
+		filter: blur(3px);
+		-webkit-filter: blur(3px);
+	}
 
 	.ttt_text{
 		color: black;
