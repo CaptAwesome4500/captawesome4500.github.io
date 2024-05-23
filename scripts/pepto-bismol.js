@@ -1,7 +1,10 @@
-const date = new Date();
+const currentDate = new Date();
 
-const month = date.getMonth();
-const day = date.getDay();
+const day = currentDate.getDate();
+const month = currentDate.getMonth() + 1;
 
-console.log("Month:" + month);
-console.log("Day:" + day);
+//Dec. 12 & 13
+
+if (month == 5){
+  document.body.style.backgroundColor = "red";
+}
