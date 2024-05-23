@@ -1,7 +1,8 @@
-const date = new Date();
+// Create a new Date object for the current date and time
+const currentDate = new Date();
 
-const month = date.getMonth();
-const day = date.getDay();
+// Get the day of the month (1-31)
+const day = currentDate.getDate();
 
-console.log("Month:" + month);
-console.log("Day:" + day);
+// Output the value of day to the console (for testing purposes)
+console.log(day);
