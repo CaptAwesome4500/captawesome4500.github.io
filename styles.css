@@ -55,6 +55,11 @@
 	.nav_bar_title {
 		float: left;
 		color: #F3F8F6;
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 24px;
+		text-decoration: none;
 	}
 
 
