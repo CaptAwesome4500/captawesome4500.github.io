@@ -1,0 +1,160 @@
+	* {
+	margin: 0;
+	padding: 0;
+	}
+
+	@font-face{
+		font-family: toh;
+		src: url(https://captawesome4500.github.io/fonts/toh.ttf);
+	}
+
+	@font-face {
+		font-family: toh;
+		src: url(https://captawesome4500.github.io/fonts/toh_bold.ttf);
+		font-weight: bold;
+	}
+
+
+	body {
+		background-color: #00777B;
+	}
+	h1 {
+		color: #F3F8F6;
+	}
+	h2 {
+		color: #F3F8F6;
+	}
+	h4 {
+		color: #F3F8F6;
+	}
+	p {
+		color: #F3F8F6;
+	}
+
+    li {
+		color: #F3F8F6;
+    }
+
+	.indent {
+		padding-left: 50px;
+	}
+
+	.nav_bar {
+	float: left;
+  	background-color: #333333;
+	}
+
+	.nav_bar a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 24px;
+	  text-decoration: none;
+	}
+	
+	.nav_ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333333;
+	}
+
+	.avatar {
+		border-radius: 50%;
+	}
+
+	.blur {
+		font-size: 40px;
+		filter: blur(20px);
+		-webkit-filter: blur(20px);
+	}
+
+	.ttt_text{
+		color: black;
+	}
+
+	.ttt_body {
+		background-color: darkcyan;
+		height: 100vh;
+		font-family: 'Times New Roman', sans-serif;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.board {
+		width: 320px;
+		height: 320px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		gap: 2px;
+		background-image: url(images/tic_tac_toe/grid.png);
+		background-size: cover;
+		border-radius: 3rem;
+		box-shadow: 0 0 15px 5px rgba(50, 50, 50, 0.5);
+		align-self: center;
+	}
+
+	.board:hover{
+		cursor: pointer;
+	}
+	
+	.ttt_button{
+		align-self: baseline;
+		width: 200px;
+		height: 50px;
+	}
+
+	.circle {
+		background-image: url(images/tic_tac_toe/o.png);
+		background-size: 80%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.cross {
+		background-image: url(images/tic_tac_toe/x.png);
+		
+	}
+
+	.circle,
+	.cross {
+		background-size: 80%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+
+	.toh_body {
+		background-color: #0C0C0C;
+		font-family: toh;
+	}
+
+	.toh_act {
+		color: #CCCCCC;
+		text-align: center;
+		font-family: toh;
+		font-size: 40px;
+	}
+	.toh_act_one {
+		color: #FF0000;
+		text-align: center;
+		font-family: toh;
+		font-size: 40px;
+	}
+
+	.toh_level {
+		color: #CCCCCC;
+		text-align: center;
+		font-family: toh;
+		font-size: 40px;
+	}
+
+	.toh_text {
+		color: #CCCCCC;
+		text-align: center;
+		font-family: toh;
+		font-size: 40px;
+	}
