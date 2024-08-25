@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lightsaber Personality Quiz</title>
+
+	<link rel="stylesheet" href="https://captawesome4500.github.io/styles.css">
+
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+
+</head>
+	<body class="body">
+		
+		<p id="prompt" class="toh_text">You see an old lady that needs help crossing the street. What do you do?</p>
+		
+		<select id="answer_0" class="toh_button">
+			<option value=3>Help her cross all the way and refsue payment if offered.</option>
+			<option value=1>Agree to help cross, but only if you get paid</option>
+			<option value=0>Shove her into the middle of the road.</option>
+			<option value=2>Help her cross halfway</option>
+		</select>
+		
+		<br><br><br><br>
+		
+		<p id="prompt" class="toh_text">Your best friend steals a valuable family heirloom from you. What do you do to your friend?</p>
+		
+		<select id="answer_1" class="toh_button">
+			<option value=2>Refuse to talk to them again</option>
+			<option value=0>Kill them without mercy</option>
+			<option value=3>Forgive them and give them a second chance</option>
+			<option value=1>Make them pay</option>
+		</select>
+		
+		<br><br><br><br>
+		
+		<p id="prompt" class="toh_text">Your heart is full of...</p>
+		
+		<select id="answer_2" class="toh_button">
+			<option value=1>Darkness</option>
+			<option value=3>Love</option>
+			<option value=2>Forgiveness</option>
+			<option value=0>Hatred</option>
+		</select>
+		
+		<br><br><br><br>
+		
+		<p id="prompt" class="toh_text">A Group of your friends plan on doing something illegal, what do you do?</p>
+		
+		<select id="answer_3" class="toh_button">
+			<option value=0>Join them</option>
+			<option value=2>Refuse to acompany them</option>
+			<option value=1>Tell them what you are doing is wrong, but go with them anyway</option>
+			<option value=3>Tell them what they are doing is wrong, and refsue to acompany them</option>
+		</select>
+		
+		<br><br><br><br>
+		
+		<p id="prompt" class="toh_text">What is your favorite color:</p>
+		
+		<select id="answer_4" class="toh_button">
+			<option value=3 style="color:#ff0000;">Green</option>
+			<option value=2 style="color:#40ff00;">Red</option>
+			<option value=1 style="color:#8000ff;">Blue</option>
+			<option value=0 style="color:#00ffff;">Purple</option>
+		</select>
+		
+		<br><br><br><br>
+		
+		<br><br>
+		<button id="submit_button" class="toh_button">Submit</button>
+		
+		<br><br><br><br><br><br>
+		
+		<img id="saber_image" src="images/unknown.png" alt="Unknown Lightsaber" style="width:256px;height:256px;"><br>
+		<h3 id="saber_name">Unknown</h3>
+		<p id="saber_lore">Your saber is yet to be uncovered. The color and shape lie in mystery.</p>
+		
+		<script>
+		
+			//https://www.bing.com/images/search?view=detailV2&ccid=efZsYCUo&id=9B0C4CE9871E7C762F260043F062D7A2A0043494&thid=OIP.efZsYCUocB-gvNdEApaQbgAAAA&mediaurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Faa%2F1c%2F8e%2Faa1c8ec4445ded252e822aac4a6cf9eb.jpg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.79f66c602528701fa0bcd7440296906e%3Frik%3DlDQEoKLXYvBDAA%26pid%3DImgRaw%26r%3D0&exph=474&expw=474&q=lightsaber+color+meanings&simid=608030600996479944&form=IRPRST&ck=C28942158ADC9AA19BB7C13858D78A99&selectedindex=2&itb=0&adlt=strict&cw=1721&ch=968&ajaxhist=0&ajaxserp=0&vt=0&sim=11
+			let score = 0;
+			let saber_type = "";
+			
+			let black_lore = "This lightsaber is one of a kind. A symbol of long mandolorian heritage. Those who weild it posess the traits of Stability, Elegance, Death, and Form."
+			let gray_lore = "This lightsaber is used by the sith lords who persevere. Those who weild it posess the traits of Patience, and Perservearance"
+			let black_lore = "This lightsaber is one of a kind. A symbol of mandolorian heritage. Those who weild it posess the traits of Stability, Elegance, Death, and Form."
+			
+			function find_saber()
+			{
+				if (score == 0)
+				{
+					saber_type = "black";
+					document.getElementById('saber_image').setAttribute('src', 'images/black.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Black Lightsaber');
+					document.getElementById("saber_name").innerHTML = "Black Lightsaber";
+					document.getElementById("saber_lore").innerHTML = black_lore;
+				}
+				else if (score == 1)
+				{
+					saber_type = "gray";
+					document.getElementById('saber_image').setAttribute('src', 'images/gray.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Gray Lightsaber');
+					document.getElementById("saber_name").innerHTML = "Gray Lightsaber";
+					document.getElementById("saber_lore").innerHTML = gray_lore;
+				}
+				else if (score == 2)
+				{
+					saber_type = "red double guard";
+					document.getElementById('saber_image').setAttribute('src', 'images/red_double_hilt.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Double Sided Red Lightsaber With Hilt');
+					document.getElementById("saber_name").innerHTML = "Double Sided Green Lightsaber with Guards";
+					document.getElementById("saber_lore").innerHTML = redDoubleHilt_lore;
+				}
+				else if (score == 3)
+				{
+					saber_type = "red double";
+					document.getElementById('saber_image').setAttribute('src', 'images/red_double.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Double Sided Red Lightsaber');
+					document.getElementById("saber_name").innerHTML = "Darth Maul's Lightsaber";
+					document.getElementById("saber_lore").innerHTML = redDouble_lore;
+				}
+				else if (score == 4)
+				{
+					saber_type = "red guard";
+					document.getElementById('saber_image').setAttribute('src', 'images/red_hilt.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Red Lightsaber With Hilt');
+					document.getElementById("saber_name").innerHTML = "Kylo Ren's Lightsaber";
+					document.getElementById("saber_lore").innerHTML = redHilt_lore;
+				}
+				else if (score == 5)
+				{
+					saber_type = "purple double guard";
+					document.getElementById('saber_image').setAttribute('src', 'images/purple_double_hilt.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Double Sided Purple Lightsaber With Hilt');
+					document.getElementById("saber_name").innerHTML = "Double Sided Purple Lightsaber with Guards";
+					document.getElementById("saber_lore").innerHTML = purpleDoubleHilt_name;
+				}
+				else if (score == 6)
+				{
+					saber_type = "purple double";
+					document.getElementById('saber_image').setAttribute('src', 'images/purple_double.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Double Sided Purple Lightsaber');
+					document.getElementById("saber_name").innerHTML = "Double Sided Purple Lightsaber";
+					document.getElementById("saber_lore").innerHTML = purpleDouble_lore;
+				}
+				else if (score == 7)
+				{
+					saber_type = "red";
+					document.getElementById('saber_image').setAttribute('src', 'images/red.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Red Lightsaber');
+					document.getElementById("saber_name").innerHTML = "Red Lightsaber";
+					document.getElementById("saber_lore").innerHTML = red_lore;
+				}
+				else if (score == 8)
+				{
+					saber_type = "purple";
+					document.getElementById('saber_image').setAttribute('src', 'images/purple.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Purple Lightsaber');
+					document.getElementById("saber_name").innerHTML = "Purple Lightsaber";
+					document.getElementById("saber_lore").innerHTML = purple_lore;
+				}
+				else if (score == 9)
+				{
+					saber_type = "blue double";
+					document.getElementById('saber_image').setAttribute('src', 'images/blue_double.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Double Sided Blue Lightsaber');
+					document.getElementById("saber_name").innerHTML = "Double Sided Blue Lightsaber";
+					document.getElementById("saber_lore").innerHTML = blueDouble_lore;
+				}
+				else if (score == 10)
+				{
+					saber_type = "blue";
+					document.getElementById('saber_image').setAttribute('src', 'images/blue.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Blue Lightsaber');
+					document.getElementById("saber_name").innerHTML = "Blue Lightsaber";
+					document.getElementById("saber_lore").innerHTML = blue_lore;
+				}
+				else if (score == 11)
+				{
+					saber_type = "green double";
+					document.getElementById('saber_image').setAttribute('src', 'images/green_double.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Double Sided Green Lightsaber');
+					document.getElementById("saber_name").innerHTML = "Double Sided Green Lightsaber";
+					document.getElementById("saber_lore").innerHTML = greenDouble_lore;
+				}
+				else if (score == 12)
+				{
+					saber_type = "green";
+					document.getElementById('saber_image').setAttribute('src', 'images/green.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Green Lightsaber');
+					document.getElementById("saber_name").innerHTML = "Green Lightsaber";
+					document.getElementById("saber_lore").innerHTML = green_lore;
+				}
+				else if (score == 13)
+				{
+					saber_type = "gold";
+					document.getElementById('saber_image').setAttribute('src', 'images/gold.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Gold Lightsaber');
+					document.getElementById("saber_name").innerHTML = "Gold Lightsaber";
+					document.getElementById("saber_lore").innerHTML = gold_lore;
+				}
+				else if (score == 14)
+				{
+					saber_type = "white";
+					document.getElementById('saber_image').setAttribute('src', 'images/white.png');
+					document.getElementById('saber_image').setAttribute('alt', 'White Lightsaber');
+					document.getElementById("saber_name").innerHTML = "White Lightsaber";
+					document.getElementById("saber_lore").innerHTML = white_lore;
+				}
+				
+				console.log("Lightsaber: " + saber_type)
+			}
+			
+			function caculate_score(answer_value)
+			{						
+				let points_gained = 0;
+				
+				if (answer_value == "0")
+				{
+					points_gained = 0;
+				}
+				else if (answer_value == "1")
+				{
+					points_gained = 1;
+				}
+				else if (answer_value == "2")
+				{
+					points_gained = 2;
+				}
+				else if (answer_value == "3")
+				{
+					points_gained = 3;
+				}
+				
+				score = score + points_gained;
+				console.log("Score: " + score)
+			}
+			
+			function submit_answers()
+			{
+				score = 0;
+				
+				//question 0
+				const answer0 = document.getElementById('answer_0');
+				const answer0_value = answer0.value;
+				console.log("Points gained: " + answer0_value);
+				
+				//question 1
+				const answer1 = document.getElementById('answer_1');
+				const answer1_value = answer1.value;
+				console.log("Points gained: " + answer1_value);
+				
+				//question 2 
+				const answer2 = document.getElementById('answer_2');
+				const answer2_value = answer2.value;
+				console.log("Points gained: " + answer2_value);
+				
+				//question 3
+				const answer3 = document.getElementById('answer_3');
+				const answer3_value = answer3.value;
+				console.log("Points gained: " + answer0_value);
+				
+				//question 4
+				const answer4 = document.getElementById('answer_4');
+				const answer4_value = answer4.value;
+				console.log("Points gained: " + answer4_value);
+				
+				caculate_score(answer0_value);
+				caculate_score(answer1_value);
+				caculate_score(answer2_value);
+				caculate_score(answer3_value);
+				caculate_score(answer4_value);
+				
+				find_saber();
+			}
+			document.getElementById('submit_button').addEventListener('click', function() {submit_answers();});
+
+		</script>
+		
+	</body>
+</html>
