@@ -242,3 +242,8 @@
 	 	margin-right: auto;
 		width: 50%;
 	}
+	.lightsaber_legal {
+		color: #333399;
+		font-family: lightsaber;
+		font-size: 10px;
+	}
