@@ -193,20 +193,37 @@
 	}
 
 
+
+	.lightsaber_body {
+		background-color: #0C0C0C;
+		font-family: lightsaber;
+	}
 	.lightsaber_text {
-		color: #CCCCCC;
+		color: #0040ff;
+		text-align: center;
+		font-family: lightsaber;
+		font-size: 40px;
+	}
+	.lightsaber_lore {
+		color: #0040ff;
+		text-align: center;
+		font-family: lightsaber;
+		font-size: 40px;
+	}
+	.lightsaber_lore {
+		color: #0000ff;
 		text-align: center;
 		font-family: lightsaber;
 		font-size: 40px;
 	}
 	.lightsaber_dropdown {
-		color: #CCCCCC
+		color: #0040ff;
 		text-align: center;
 		font-family: lightsaber;
 		font-size: 40px;
 	}
 	.lightsaber_button {
-		color: #CCCCCC;
+		color: #0040ff;
 		text-align: center;
 		font-family: lightsaber;
 		font-size: 40px;
