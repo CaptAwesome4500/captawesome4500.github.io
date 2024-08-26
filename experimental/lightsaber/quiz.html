@@ -14,9 +14,9 @@
 </head>
 	<body class="body">
 		
-		<p id="prompt" class="toh_text">You see an old lady that needs help crossing the street. What do you do?</p>
+		<p id="prompt" class="lightsaber_text">You see an old lady that needs help crossing the street. What do you do?</p>
 		
-		<select id="answer_0" class="toh_button">
+		<select id="answer_0" class="lightsaber_dropdown">
 			<option value=3>Help her cross all the way and refsue payment if offered.</option>
 			<option value=1>Agree to help cross, but only if you get paid</option>
 			<option value=0>Shove her into the middle of the road.</option>
@@ -25,9 +25,9 @@
 		
 		<br><br><br><br>
 		
-		<p id="prompt" class="toh_text">Your best friend steals a valuable family heirloom from you. What do you do to your friend?</p>
+		<p id="prompt" class="lightsaber_text">Your best friend steals a valuable family heirloom from you. What do you do to your friend?</p>
 		
-		<select id="answer_1" class="toh_button">
+		<select id="answer_1" class="lightsaber_dropdown">
 			<option value=2>Refuse to talk to them again</option>
 			<option value=0>Kill them without mercy</option>
 			<option value=3>Forgive them and give them a second chance</option>
@@ -36,9 +36,9 @@
 		
 		<br><br><br><br>
 		
-		<p id="prompt" class="toh_text">Your heart is full of...</p>
+		<p id="prompt" class="lightsaber_text">Your heart is full of...</p>
 		
-		<select id="answer_2" class="toh_button">
+		<select id="answer_2" class="lightsaber_dropdown">
 			<option value=1>Darkness</option>
 			<option value=3>Love</option>
 			<option value=2>Forgiveness</option>
@@ -47,9 +47,9 @@
 		
 		<br><br><br><br>
 		
-		<p id="prompt" class="toh_text">A Group of your friends plan on doing something illegal, what do you do?</p>
+		<p id="prompt" class="lightsaber_text">A Group of your friends plan on doing something illegal, what do you do?</p>
 		
-		<select id="answer_3" class="toh_button">
+		<select id="answer_3" class="lightsaber_dropdown">
 			<option value=0>Join them</option>
 			<option value=2>Refuse to acompany them</option>
 			<option value=1>Tell them what you are doing is wrong, but go with them anyway</option>
@@ -58,9 +58,9 @@
 		
 		<br><br><br><br>
 		
-		<p id="prompt" class="toh_text">What is your favorite color:</p>
+		<p id="prompt" class="lightsaber_text">What is your favorite color:</p>
 		
-		<select id="answer_4" class="toh_button">
+		<select id="answer_4" class="lightsaber_dropdown">
 			<option value=3 style="color:#ff0000;">Green</option>
 			<option value=2 style="color:#40ff00;">Red</option>
 			<option value=1 style="color:#8000ff;">Blue</option>
@@ -70,13 +70,13 @@
 		<br><br><br><br>
 		
 		<br><br>
-		<button id="submit_button" class="toh_button">Submit</button>
+		<button id="submit_button" class="lightsaber_button">Submit</button>
 		
 		<br><br><br><br><br><br>
 		
 		<img id="saber_image" src="images/unknown.png" alt="Unknown Lightsaber" style="width:256px;height:256px;"><br>
-		<h3 id="saber_name">Unknown</h3>
-		<p id="saber_lore">Your saber is yet to be uncovered. The color and shape lie in mystery.</p>
+		<h3 id="saber_name" class="lightsaber_name"><b>Unknown</b></h3>
+		<p id="saber_lore" class="lightsaber_lore"><i>Your saber is yet to be uncovered. The color and shape lie in mystery.</i></p>
 		
 		<script>
 		
@@ -86,8 +86,20 @@
 			
 			let black_lore = "This lightsaber is one of a kind. A symbol of long mandolorian heritage. Those who weild it posess the traits of Stability, Elegance, Death, and Form."
 			let gray_lore = "This lightsaber is used by the sith lords who persevere. Those who weild it posess the traits of Patience, and Perservearance"
-			let black_lore = "This lightsaber is one of a kind. A symbol of mandolorian heritage. Those who weild it posess the traits of Stability, Elegance, Death, and Form."
-			
+			let redDoubleHilt_lore = "This lightsaber's kyber crystals broke, giving it the hand guard. It also was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Passion, Fear, Power, Destruction, Courage, and Faith."
+			let redDouble_lore = "This lightsaber is used by the sith lords. This lightsaber was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Passion, Fear, Power, Courage, and Faith."
+			let redHilt_lore = "This lightsaber is used by the sith lords. This lightsaber's kyber crystals broke, giving it the hand guard. Those who weild it posess the traits of Passion, Fear, Destruction, Courage, and Faith."
+			let purpleDoubleHilt_lore = "This lightsaber is used by those who struggle to find the balance between the light and dark side. This lightsaber's kyber crystals broke, giving it the hand guard. It also was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Love, Power, Destruction, and Creativity."
+			let purpleDouble_lore = "This lightsaber is used by those who struggle to find the balance between the light and dark side. It was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Creativity, Power, and Love."
+			let red_lore = "This lightsaber is used by the sith lords. Those who weild it posess the traits of Passion, Faith, and Courage"
+			let purple_lore = "This lightsaber is used by those who struggle to find the balance between the light and dark side. Those who weild it posess the traits of Love, and Creativity"
+			let blueDouble_lore = "This lightsaber is unusally used by young pawadan, and jedi. This lightsaber was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Youth, Peace, Truth, Sky, Power, and Water"
+			let blue_lore = "This lightsaber is used by pawadan, and jedi. Those who weild it posess the traits of Youth, Peace, Truth, Sky, and Water"
+			let greenDouble_lore = "This lightsaber is used by jedi masters. This lightsaber was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Life, Nature, Fertility, Power, and Harmony"
+			let green_lore = "This lightsaber is used by specially trained jedi masters. Those who weild it posess the traits of Life, Nature, Fertility, and Harmony"
+			let gold_lore = "This lightsaber is used by guardians of the jedi temple. Those who weild it posess the traits of Optimism, Wisdom, Happiness, and Energ"
+			let white_lore = "This lightsaber is used by jedi who are pure of heart. This blade is the most difficult to obtain. Those who weild it posess the traits of Purity, Unity, Cleanliness, and Synerity"
+
 			function find_saber()
 			{
 				if (score == 0)
@@ -241,7 +253,7 @@
 			
 			function submit_answers()
 			{
-				score = 0;
+				//score = 0;
 				
 				//question 0
 				const answer0 = document.getElementById('answer_0');

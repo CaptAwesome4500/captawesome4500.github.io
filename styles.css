@@ -14,6 +14,11 @@
 		font-weight: bold;
 	}
 
+	@font-face {
+		font-family: lightsaber;
+		src: url(https://captawesome4500.github.io/fonts/a_fb.ttf);
+	}
+
 
 	body {
 		background-color: #00777B;
@@ -179,5 +184,25 @@
 		color: #CCCCCC;
 		text-align: center;
 		font-family: toh;
+		font-size: 40px;
+	}
+
+
+	.lightsaber_text {
+		color: #CCCCCC;
+		text-align: center;
+		font-family: lightsaber;
+		font-size: 40px;
+	}
+	.lightsaber_dropdown {
+		color: #CCCCCC
+		text-align: center;
+		font-family: lightsaber;
+		font-size: 40px;
+	}
+	.lightsaber_button {
+		color: #CCCCCC;
+		text-align: center;
+		font-family: lightsaber;
 		font-size: 40px;
 	}
