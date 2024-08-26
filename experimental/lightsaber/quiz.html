@@ -83,6 +83,17 @@
 		
 		<br><br><br><br>
 		
+		<p id="prompt" class="lightsaber_text">When you are in a dangerous situation, you'd most likely...</p>
+		
+		<select id="answer_5" class="lightsaber_dropdown">
+			<option value=1>Hide and stay in a safe place</option>
+			<option value=0>Send someone else into the danger</option>
+			<option value=2>Face the danger head on</option>
+			<option value=3>Take the responsible decisions for the current situation.</option>
+		</select>
+		
+		<br><br><br><br>
+		
 		<br><br>
 		<button id="submit_button" class="lightsaber_button">Submit</button>
 		
@@ -94,7 +105,7 @@
 		
 		<br><br><br><br>
 		
-		<p class="lightsaber_legal">Lightsaber is a trademark of Disney and Lucasfilm.</p>
+		<p class="lightsaber_legal"><i>Lightsaber</i>, <i>Star Wars</i>, <i>Darth Maul</i>, <i>Kylo Renn</i>, <i>Darth Vader</i>, <i>Padawan</i>, and <i>Jedi</i> are all trademarks of Disney and Lucasfilm. No copyright infringement intended.</p>
 		
 		<script>
 		
@@ -104,19 +115,22 @@
 			
 			let black_lore = "This lightsaber is one of a kind. A symbol of long mandolorian heritage. Those who weild it posess the traits of Stability, Elegance, Death, and Form."
 			let gray_lore = "This lightsaber is used by the sith lords who persevere. Those who weild it posess the traits of Patience, and Perservearance"
+			let redSextuple_lore = "This lightsaber is an illegal modification to the blade used by sith lords. It was modified for a duel between brothers. It was weilded by the lowest of the sith lords, who's dark energy rivaled that of Darth Vader. Those who weild it posess the traits of Passion, Faith, Betrayal, and Courage."
 			let redDoubleHilt_lore = "This lightsaber's kyber crystals broke, giving it the hand guard. It also was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Passion, Fear, Power, Destruction, Courage, and Faith."
 			let redDouble_lore = "This lightsaber is used by the sith lords. This lightsaber was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Passion, Fear, Power, Courage, and Faith."
 			let redHilt_lore = "This lightsaber is used by the sith lords. This lightsaber's kyber crystals broke, giving it the hand guard. Those who weild it posess the traits of Passion, Fear, Destruction, Courage, and Faith."
 			let purpleDoubleHilt_lore = "This lightsaber is used by those who struggle to find the balance between the light and dark side. This lightsaber's kyber crystals broke, giving it the hand guard. It also was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Love, Power, Destruction, and Creativity."
 			let purpleDouble_lore = "This lightsaber is used by those who struggle to find the balance between the light and dark side. It was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Creativity, Power, and Love."
-			let red_lore = "This lightsaber is used by the sith lords. Those who weild it posess the traits of Passion, Faith, and Courage"
-			let purple_lore = "This lightsaber is used by those who struggle to find the balance between the light and dark side. Those who weild it posess the traits of Love, and Creativity"
-			let blueDouble_lore = "This lightsaber is unusally used by young pawadan, and jedi. This lightsaber was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Youth, Peace, Truth, Sky, Power, and Water"
-			let blue_lore = "This lightsaber is used by pawadan, and jedi. Those who weild it posess the traits of Youth, Peace, Truth, Sky, and Water"
-			let greenDouble_lore = "This lightsaber is used by jedi masters. This lightsaber was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Life, Nature, Fertility, Power, and Harmony"
+			let red_lore = "This lightsaber is used by the sith lords. Those who weild it posess the traits of Passion, Faith, and Courage."
+			let purple_lore = "This lightsaber is used by those who struggle to find the balance between the light and dark side. Those who weild it posess the traits of Love, and Creativity."
+			let blueSextuple_lore = "This lightsaber is an illegal modification to the blade used by padawan and jedi. It was modified for a duel between brothers. Those who weild it posess the traits of Youth, Peace, Truth, Sky, Concern, and Water."
+			let blueDouble_lore = "This lightsaber is unusally used by young pawadan, and jedi. This lightsaber was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Youth, Peace, Truth, Sky, Power, and Water."
+			let blue_lore = "This lightsaber is used by pawadan, and jedi. Those who weild it posess the traits of Youth, Peace, Truth, Sky, and Water."
+			let greenDouble_lore = "This lightsaber is used by jedi masters. This lightsaber was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Life, Nature, Fertility, Power, and Harmony."
 			let green_lore = "This lightsaber is used by specially trained jedi masters. Those who weild it posess the traits of Life, Nature, Fertility, and Harmony"
-			let gold_lore = "This lightsaber is used by guardians of the jedi temple. Those who weild it posess the traits of Optimism, Wisdom, Happiness, and Energ"
-			let white_lore = "This lightsaber is used by jedi who are pure of heart. This blade is the most difficult to obtain. Those who weild it posess the traits of Purity, Unity, Cleanliness, and Synerity"
+			let goldDouble_lore = "This lightsaber is seldom used by guardians of the jedi temple. This lightsaber was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Optimism, Power, Wisdom, Happiness, and Energy."
+			let gold_lore = "This lightsaber is used by guardians of the jedi temple. Those who weild it posess the traits of Optimism, Wisdom, Happiness, and Energy."
+			let white_lore = "This lightsaber is used by jedi who are pure of heart. This blade is the most difficult to obtain. Those who weild it posess the traits of Purity, Unity, Cleanliness, and Synerity."
 
 			function find_saber()
 			{
@@ -138,13 +152,21 @@
 				}
 				else if (score == 2)
 				{
+					saber_type = "red sextuple";
+					document.getElementById('saber_image').setAttribute('src', 'images/red_sextuple.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Red Sextuple Bladed Saber');
+					document.getElementById("saber_name").innerHTML = "Red Sextuple Bladed Saber";
+					document.getElementById("saber_lore").innerHTML = redSextuple_lore;
+				}
+				else if (score == 3)
+				{
 					saber_type = "red double guard";
 					document.getElementById('saber_image').setAttribute('src', 'images/red_double_hilt.png');
 					document.getElementById('saber_image').setAttribute('alt', 'Double Sided Red Lightsaber With Hilt');
 					document.getElementById("saber_name").innerHTML = "Double Sided Red Lightsaber with Guards";
 					document.getElementById("saber_lore").innerHTML = redDoubleHilt_lore;
 				}
-				else if (score == 3)
+				else if (score == 4)
 				{
 					saber_type = "red double";
 					document.getElementById('saber_image').setAttribute('src', 'images/red_double.png');
@@ -152,7 +174,7 @@
 					document.getElementById("saber_name").innerHTML = "Darth Maul's Lightsaber";
 					document.getElementById("saber_lore").innerHTML = redDouble_lore;
 				}
-				else if (score == 4)
+				else if (score == 5)
 				{
 					saber_type = "red guard";
 					document.getElementById('saber_image').setAttribute('src', 'images/red_hilt.png');
@@ -160,7 +182,7 @@
 					document.getElementById("saber_name").innerHTML = "Kylo Ren's Lightsaber";
 					document.getElementById("saber_lore").innerHTML = redHilt_lore;
 				}
-				else if (score == 5)
+				else if (score == 6)
 				{
 					saber_type = "purple double guard";
 					document.getElementById('saber_image').setAttribute('src', 'images/purple_double_hilt.png');
@@ -168,7 +190,7 @@
 					document.getElementById("saber_name").innerHTML = "Double Sided Purple Lightsaber with Guards";
 					document.getElementById("saber_lore").innerHTML = purpleDoubleHilt_name;
 				}
-				else if (score == 6)
+				else if (score == 7)
 				{
 					saber_type = "purple double";
 					document.getElementById('saber_image').setAttribute('src', 'images/purple_double.png');
@@ -176,7 +198,7 @@
 					document.getElementById("saber_name").innerHTML = "Double Sided Purple Lightsaber";
 					document.getElementById("saber_lore").innerHTML = purpleDouble_lore;
 				}
-				else if (score == 7)
+				else if (score == 8)
 				{
 					saber_type = "red";
 					document.getElementById('saber_image').setAttribute('src', 'images/red.png');
@@ -184,7 +206,7 @@
 					document.getElementById("saber_name").innerHTML = "Red Lightsaber";
 					document.getElementById("saber_lore").innerHTML = red_lore;
 				}
-				else if (score == 8)
+				else if (score == 9)
 				{
 					saber_type = "purple";
 					document.getElementById('saber_image').setAttribute('src', 'images/purple.png');
@@ -192,7 +214,16 @@
 					document.getElementById("saber_name").innerHTML = "Purple Lightsaber";
 					document.getElementById("saber_lore").innerHTML = purple_lore;
 				}
-				else if (score == 9)
+				
+				else if (score == 10)
+				{
+					saber_type = "blue sextuple";
+					document.getElementById('saber_image').setAttribute('src', 'images/blue_sextuple.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Blue Sextuple Bladed Saber');
+					document.getElementById("saber_name").innerHTML = "Blue Sextuple Bladed Saber";
+					document.getElementById("saber_lore").innerHTML = blueSextuple_lore;
+				}
+				else if (score == 11)
 				{
 					saber_type = "blue double";
 					document.getElementById('saber_image').setAttribute('src', 'images/blue_double.png');
@@ -200,7 +231,7 @@
 					document.getElementById("saber_name").innerHTML = "Double Sided Blue Lightsaber";
 					document.getElementById("saber_lore").innerHTML = blueDouble_lore;
 				}
-				else if (score == 10)
+				else if (score >= 12 && score <= 17)
 				{
 					saber_type = "blue";
 					document.getElementById('saber_image').setAttribute('src', 'images/blue.png');
@@ -208,7 +239,7 @@
 					document.getElementById("saber_name").innerHTML = "Blue Lightsaber";
 					document.getElementById("saber_lore").innerHTML = blue_lore;
 				}
-				else if (score == 11)
+				else if (score >= 18 && score <= 20)
 				{
 					saber_type = "green double";
 					document.getElementById('saber_image').setAttribute('src', 'images/green_double.png');
@@ -216,7 +247,7 @@
 					document.getElementById("saber_name").innerHTML = "Double Sided Green Lightsaber";
 					document.getElementById("saber_lore").innerHTML = greenDouble_lore;
 				}
-				else if (score == 12)
+				else if (score == 21)
 				{
 					saber_type = "green";
 					document.getElementById('saber_image').setAttribute('src', 'images/green.png');
@@ -224,7 +255,15 @@
 					document.getElementById("saber_name").innerHTML = "Green Lightsaber";
 					document.getElementById("saber_lore").innerHTML = green_lore;
 				}
-				else if (score == 13)
+				else if (score == 22)
+				{
+					saber_type = "gold double";
+					document.getElementById('saber_image').setAttribute('src', 'images/gold_double.png');
+					document.getElementById('saber_image').setAttribute('alt', 'Double Sided Gold Lightsaber');
+					document.getElementById("saber_name").innerHTML = "Double Sided Gold Lightsaber";
+					document.getElementById("saber_lore").innerHTML =goldDouble_lore;
+				}
+				else if (score == 23)
 				{
 					saber_type = "gold";
 					document.getElementById('saber_image').setAttribute('src', 'images/gold.png');
@@ -232,7 +271,7 @@
 					document.getElementById("saber_name").innerHTML = "Gold Lightsaber";
 					document.getElementById("saber_lore").innerHTML = gold_lore;
 				}
-				else if (score == 14)
+				else if (score == 24)
 				{
 					saber_type = "white";
 					document.getElementById('saber_image').setAttribute('src', 'images/white.png');
@@ -298,11 +337,17 @@
 				const answer4_value = answer4.value;
 				console.log("Points gained: " + answer4_value);
 				
+				//question 5
+				const answer5 = document.getElementById('answer_5');
+				const answer5_value = answer5.value;
+				console.log("Points gained: " + answer5_value);
+				
 				caculate_score(answer0_value);
 				caculate_score(answer1_value);
 				caculate_score(answer2_value);
 				caculate_score(answer3_value);
 				caculate_score(answer4_value);
+				caculate_score(answer5_value);
 				
 				find_saber();
 			}

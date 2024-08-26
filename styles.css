@@ -199,25 +199,25 @@
 		font-family: lightsaber;
 	}
 	.lightsaber_text {
-		color: #0040ff;
+		color: #ffd700;
 		text-align: center;
 		font-family: lightsaber;
 		font-size: 40px;
 	}
 	.lightsaber_lore {
-		color: #0040ff;
+		color: #ffd700;
 		text-align: center;
 		font-family: lightsaber;
 		font-size: 40px;
 	}
 	.lightsaber_name {
-		color: #0000ff;
+		color: #e6c200;
 		text-align: center;
 		font-family: lightsaber;
 		font-size: 40px;
 	}
 	.lightsaber_dropdown {
-		color: #0040ff;
+		color: #ffd700;
 		background-color: #0C0C0C;
 		text-align: center;
 		font-family: lightsaber;
@@ -227,7 +227,7 @@
 		width: 50%;
 	}
 	.lightsaber_button {
-		color: #0040ff;
+		color: #ffd700 ;
 		background-color: #0C0C0C;
 		text-align: center;
 		font-family: lightsaber;
@@ -243,7 +243,7 @@
 		width: 50%;
 	}
 	.lightsaber_legal {
-		color: #333399;
+		color: #9a8100;
 		font-family: lightsaber;
 		font-size: 10px;
 	}
