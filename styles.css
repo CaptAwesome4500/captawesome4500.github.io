@@ -222,10 +222,23 @@
 		text-align: center;
 		font-family: lightsaber;
 		font-size: 40px;
+	  	margin-left: auto;
+	 	margin-right: auto;
+		width: 50%;
 	}
 	.lightsaber_button {
 		color: #0040ff;
+		background-color: #0C0C0C;
 		text-align: center;
 		font-family: lightsaber;
 		font-size: 40px;
+	  	margin-left: auto;
+	 	margin-right: auto;
+		width: 50%;
+	}
+	.lightsaber_image {
+	  	display: block;
+	  	margin-left: auto;
+	 	margin-right: auto;
+		width: 50%;
 	}
