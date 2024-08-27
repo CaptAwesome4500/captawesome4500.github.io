@@ -23,6 +23,10 @@
 		src: url(https://captawesome4500.github.io/fonts/a_fb_bold.ttf);
 		font-weight: bold;
 	}
+	@font-face {
+		font-family: starwars;
+		src: url(https://captawesome4500.github.io/fonts/starwars.ttf);
+	}
 
 
 	body {

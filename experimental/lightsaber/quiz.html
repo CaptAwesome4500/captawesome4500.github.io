@@ -122,7 +122,7 @@
 			
 			let black_lore = "This lightsaber is one of a kind. A symbol of long mandolorian heritage. Those who weild it posess the traits of Stability, Elegance, Death, and Form."
 			let gray_lore = "This lightsaber is used by the sith lords who persevere. Those who weild it posess the traits of Patience, and Perservearance"
-			let redSextuple_lore = "This lightsaber is an illegal modification to the blade used by sith lords. It was modified for a duel between brothers. It was weilded by the lowest of the sith lords, who's dark energy rivaled that of Darth Vader. Those who weild it posess the traits of Passion, Faith, Betrayal, and Courage."
+			let redSextuple_lore = "This lightsaber is an illegal modification to the blade used by sith lords. It was modified for a duel between brothers. It was weilded by the strongest of the sith lords, who's dark energy rivaled that of Darth Vader. Those who weild it posess the traits of Passion, Faith, Betrayal, and Courage."
 			let redDoubleHilt_lore = "This lightsaber's kyber crystals broke, giving it the hand guard. It also was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Passion, Fear, Power, Destruction, Courage, and Faith."
 			let redDouble_lore = "This lightsaber is used by the sith lords. This lightsaber was manufactured in such a way that caused two ends to pretrude from it. Those who weild it posess the traits of Passion, Fear, Power, Courage, and Faith."
 			let redHilt_lore = "This lightsaber is used by the sith lords. This lightsaber's kyber crystals broke, giving it the hand guard. Those who weild it posess the traits of Passion, Fear, Destruction, Courage, and Faith."
@@ -146,7 +146,7 @@
 					saber_type = "black";
 					document.getElementById('saber_image').setAttribute('src', 'images/black.png');
 					document.getElementById('saber_image').setAttribute('alt', 'Black Lightsaber');
-					document.getElementById("saber_name").innerHTML = "Black Lightsaber";
+					document.getElementById("saber_name").innerHTML = "Dark Saber";
 					document.getElementById("saber_lore").innerHTML = black_lore;
 				}
 				else if (score == 1)
@@ -362,5 +362,13 @@
 
 		</script>
 		
+		<script>
+			let text = 2 //Math.floor(Math.random() * 10) + 1;
+			
+			if (text == 2)
+			{
+				document.getElementById('lightsaber_body').style.font = "starwars"
+			}
+		</script>
 	</body>
 </html>
