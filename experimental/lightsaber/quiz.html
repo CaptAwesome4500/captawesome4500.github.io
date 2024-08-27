@@ -363,12 +363,44 @@
 		</script>
 		
 		<script>
-			let text = 2 //Math.floor(Math.random() * 10) + 1;
-			
-			if (text == 2)
+		
+			function change_text(text_items)
 			{
-				document.getElementById('lightsaber_body').style.font = "starwars"
+				text_items.forEach(function(item)
+				{
+					item.style.fontFamily = 'starwars';
+					item.style.color = '#00cccc';
+					
+					var currentFontSize = window.getComputedStyle(item).fontSize;
+					var fontSizeInPixels = parseFloat(currentFontSize);
+					var newFontSize = fontSizeInPixels / 2;
+					item.style.fontSize = newFontSize + 'px';
+				});
 			}
+			window.onload = function()
+			{
+				var text_number = Math.floor(Math.random() * 10) + 1;
+			
+				if (text_number == 7)
+				{
+					var textItems = document.querySelectorAll('.lightsaber_text');
+					var loreItems = document.querySelectorAll('.lightsaber_lore');
+					var nameItems = document.querySelectorAll('.lightsaber_name');
+					var dropdownItems = document.querySelectorAll('.lightsaber_dropdown');
+					var buttonItems = document.querySelectorAll('.lightsaber_button');
+					var titleItems = document.querySelectorAll('.lightsaber_title');
+					var subtitleItems = document.querySelectorAll('.lightsaber_subtitle');
+
+					
+					change_text(textItems);
+					change_text(loreItems);
+					change_text(nameItems);
+					change_text(dropdownItems);
+					change_text(buttonItems);
+					change_text(titleItems);
+					change_text(subtitleItems);
+				}
+			};
 		</script>
 	</body>
 </html>
