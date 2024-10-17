@@ -50,6 +50,12 @@
 		color: #F3F8F6;
     }
 
+	.table {
+		margin-left: auto;
+		margin-right: auto;
+		border-spacing: 25px;
+	}
+
 	.indent {
 		padding-left: 50px;
 	}
