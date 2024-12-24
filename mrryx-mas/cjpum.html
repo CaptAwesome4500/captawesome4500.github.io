@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        /* Add your custom CSS styling here */
+        /* For simplicity, I'm not including extensive styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+		<p>(case sensitive)</p>
+        <label style="color:Red;", for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter username" required>
+        <br>
+        <label style="color:Green;", for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password" required>
+        <br>
+		<div id="myDIV">
+			<p>Someone has tried to access this page from another device. To make sure it's you enter your 9 character Recovery Key.</p>
+			<label style="color:Black;", for="text">Recovery Key:</label>
+			<input type="text" id="recovery_key" placeholder="Recovery Key" required>
+		</div>
+        <input type="button" value="Login" onclick="validate()">
+    </div>
+
+    <script>
+		var x = document.getElementById("myDIV");
+		x.style.display = "none";
+		
+		
+        function validate() {
+            var enteredUsername = document.getElementById("username").value;
+            var enteredPassword = document.getElementById("password").value;
+			var enteredKey = document.getElementById("recovery_key").value;
+			
+			var x = document.getElementById("myDIV");
+            // Replace with your desired correct username and password
+            var correctUsername = "Mrryriss";
+            var correctPassword = "eChtma";
+			var correctKey = "AmazonBox";
+			
+            if (enteredUsername === correctUsername && enteredPassword === correctPassword) {
+				
+				if (x.style.display === "block") {
+					if (enteredKey === correctKey){
+						window.location.href='https://drive.google.com/file/d/10KZfHxAjpLWpI49krOOmJstsNm-JOEXA/view?usp=drive_link';
+					}
+					
+					else{
+						alert("Hint: What you have always wanted for Christmas. No spaces, each word capitalized.");
+					}
+				}
+				else {
+					x.style.display = "block";
+				}
+            } else {
+                alert("Invalid credentials");
+            }
+        }
+    </script>
+</body>
+</html>
